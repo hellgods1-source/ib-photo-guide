@@ -52,39 +52,6 @@
       font-weight: 600;
       color: var(--muted);
     }
-    .edit-bar {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.45rem;
-      margin-top: 0.75rem;
-    }
-    .edit-bar button {
-      font-family: var(--font);
-      font-size: 0.8rem;
-      font-weight: 700;
-      padding: 0.32rem 0.78rem;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-      cursor: pointer;
-    }
-    .edit-bar button:hover { background: var(--surface2); }
-    .edit-bar button.is-on {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
-    }
-    .edit-hint {
-      font-size: 0.75rem;
-      color: var(--muted);
-    }
-    [contenteditable="true"] {
-      outline: 1px dashed var(--accent);
-      outline-offset: 2px;
-      cursor: text;
-    }
     .toc {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
@@ -158,11 +125,6 @@
       background: var(--warn-bg);
       border-color: #f5d38a;
       color: #7c3d09;
-    }
-    .box-ok {
-      background: var(--success-bg);
-      border-color: #a7e3c8;
-      color: #065f46;
     }
     .box-info {
       background: var(--current);
@@ -313,8 +275,6 @@
       body { background: #fff; }
       section { box-shadow: none; }
       a { color: inherit; text-decoration: none; }
-      .edit-bar { display: none !important; }
-      [contenteditable="true"] { outline: none; }
     }
   </style>
 </head>
@@ -413,35 +373,35 @@
       <p>탈·장착 범위와 인접한 실내를 먼저 촬영합니다. 소지품이 없어도 빈 트렁크·빈 프렁크를 촬영해야 “입고 때 없었다”는 증빙이 됩니다.</p>
       <div class="gallery">
         <figure>
-          <img src="photo-guide-assets/interior-01-cabin.jpg" alt="실내 전체" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/interior-01-cabin.jpg" alt="실내 전체" />
           <figcaption>
             <strong>실내 전체</strong>
             좌석·도어 트림·콘솔이 한 장에 들어오게 촬영합니다. 탈·장착 범위와 인접한 실내를 빠뜨리지 않습니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/interior-02-door-trim.jpg" alt="도어 트림" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/interior-02-door-trim.jpg" alt="도어 트림" />
           <figcaption>
             <strong>도어 트림·포켓</strong>
             조수석·해당 도어 트림을 열어 촬영합니다. 오염·스크래치가 있으면 클로즈를 추가합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/interior-03-trunk-empty.jpg" alt="트렁크 소지품" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/interior-03-trunk-empty.jpg" alt="트렁크 소지품" />
           <figcaption>
             <strong>트렁크 소지품</strong>
             매트·장대·쇼핑백처럼 트렁크 물건이 식별되게 촬영합니다. 비어 있으면 빈 상태 그대로 촬영합니다. 교육용 예시이며, 이 가이드의 전면 탈·장착 작업과 다른 차량입니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/interior-04-personal-items.jpg" alt="도어 포켓 소지품" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/interior-04-personal-items.jpg" alt="도어 포켓 소지품" />
           <figcaption>
             <strong>개인 소지품 예시</strong>
             도어 포켓 비닐봉지처럼 작은 물건도 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/interior-05-frunk.jpg" alt="프렁크 소지품" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/interior-05-frunk.jpg" alt="프렁크 소지품" />
           <figcaption>
             <strong>프렁크 소지품</strong>
             트레이를 열고 수건·물건이 식별되게 촬영합니다. 비어 있으면 빈 상태 그대로 촬영합니다. 교육용 예시이며, 이 가이드의 전면 탈·장착 작업과 다른 차량입니다.
@@ -465,28 +425,28 @@
       <p>작업 부위에서 가장 먼저 남는 증빙입니다. 전체 촬영으로 위치를 특정하고, 주황·빨강 표시가 읽히도록 클로즈를 추가합니다.</p>
       <div class="gallery">
         <figure>
-          <img src="photo-guide-assets/impact-01-front-overall.jpg" alt="전면 전체 충격" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/impact-01-front-overall.jpg" alt="전면 전체 충격" />
           <figcaption>
             <strong>전면 전체</strong>
             차량 정면에서 충격 위치와 주변 패널이 함께 보이게 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/impact-02-side-overall.jpg" alt="측면 전체 충격" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/impact-02-side-overall.jpg" alt="측면 전체 충격" />
           <figcaption>
             <strong>측면 전체</strong>
             펜더·도어·휠하우스까지 한 장에 담습니다. 배경의 다른 차량 탈착 상태는 이 작업이 아닙니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/impact-03-front-34.jpg" alt="전면 3분의 4 충격" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/impact-03-front-34.jpg" alt="전면 3분의 4 충격" />
           <figcaption>
             <strong>전면 3/4</strong>
             범퍼·헤드램프·펜더 파손과 표시가 한눈에 들어오게 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/impact-04-front-close.jpg" alt="전면 충격 클로즈" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/impact-04-front-close.jpg" alt="전면 충격 클로즈" />
           <figcaption>
             <strong>전면 클로즈</strong>
             균열·함몰·교환 표시가 읽히게 촬영합니다. 원거리 촬영은 보험에서 범위를 확인하기 어렵습니다.
@@ -510,28 +470,28 @@
       <p>탈착한 부품·패널과 노출된 구조가 한 장에 들어와야 작업 범위를 입증할 수 있습니다. 아래 샘플은 동일 탈착 상태의 와이드와 클로즈입니다. 이 작업에서는 펜더가 아직 장착된 상태이므로, 펜더를 완전히 탈착한 경우에는 휠·캘리퍼·마운트가 한 장에 들어오게 촬영합니다.</p>
       <div class="gallery">
         <figure>
-          <img src="photo-guide-assets/remove-01-front-disassembly.jpg" alt="프론트 탈착 와이드" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/remove-01-front-disassembly.jpg" alt="프론트 탈착 와이드" />
           <figcaption>
             <strong>프론트 탈착 와이드</strong>
             후드 개방, 범퍼 탈착 후 전면 구조가 한 장에 들어오게 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/remove-02-front-34.jpg" alt="탈착 좌측 3분의 4" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/remove-02-front-34.jpg" alt="탈착 좌측 3분의 4" />
           <figcaption>
             <strong>탈착 좌측 3/4</strong>
             크래시 구조와 휠하우스가 보이게 촬영합니다. 펜더를 완전히 탈착한 경우에는 캘리퍼·마운트까지 담습니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/remove-03-apron-crash.jpg" alt="에이프론 크래시 탈착 클로즈" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/remove-03-apron-crash.jpg" alt="에이프론 크래시 탈착 클로즈" />
           <figcaption>
             <strong>에이프론·크래시 탈착 클로즈</strong>
             탈착한 전면 구조가 식별되게 촬영합니다. 추가 범위 갤러리의 은폐 구조 장과 목적이 다릅니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/remove-04-harness.jpg" alt="하네스 손상 클로즈" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/remove-04-harness.jpg" alt="하네스 손상 클로즈" />
           <figcaption>
             <strong>하네스 손상 클로즈</strong>
             피복이 벗겨진 배선을 손에 들고 끝단이 보이게 촬영합니다. 교육용 예시이며, 이 가이드의 전면 탈·장착 작업과 다른 차량입니다.
@@ -559,70 +519,70 @@
       <p>원래 견적에 없던 파손·오염은 표시한 뒤 즉시 촬영합니다. 사후 촬영은 작업 중 손상과 구분되지 않습니다.</p>
       <div class="gallery">
         <figure>
-          <img src="photo-guide-assets/extra-01-roof-molding.jpg" alt="루프 몰딩 스크래치" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-01-roof-molding.jpg" alt="루프 몰딩 스크래치" />
           <figcaption>
             <strong>루프 몰딩 스크래치</strong>
             인접 패널 오염·스크래치는 작업 전에 클로즈로 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-02-door-touchup.jpg" alt="도어 터치업 표시" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-02-door-touchup.jpg" alt="도어 터치업 표시" />
           <figcaption>
             <strong>도어 터치업 표시</strong>
             손글씨 표시와 파손 위치가 한 장에 읽히게 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-03-adjacent-door.jpg" alt="인접 도어 패널" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-03-adjacent-door.jpg" alt="인접 도어 패널" />
           <figcaption>
             <strong>인접 패널 오염·스크래치</strong>
             작업 도어 옆 패널도 촬영합니다. 출고 클레임에 대비합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-04-roof-scratch.jpg" alt="루프 스크래치 클로즈" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-04-roof-scratch.jpg" alt="루프 스크래치 클로즈" />
           <figcaption>
             <strong>루프 스크래치 클로즈</strong>
             원거리 촬영은 보험에서 범위로 인정받기 어렵습니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-05-door-liner.jpg" alt="도어 터치업과 휠라이너" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-05-door-liner.jpg" alt="도어 터치업과 휠라이너" />
           <figcaption>
             <strong>도어 터치업 + 휠라이너</strong>
             표시와 라이너 파손을 함께 담습니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-06-rocker-door.jpg" alt="사이드실과 도어" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-06-rocker-door.jpg" alt="사이드실과 도어" />
           <figcaption>
             <strong>사이드실·도어</strong>
             사이드실과 도어 하단 추가 범위입니다. 전체 라인이 보이게 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-07-bumper-marked.jpg" alt="범퍼 파손 표시" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-07-bumper-marked.jpg" alt="범퍼 파손 표시" />
           <figcaption>
             <strong>범퍼 파손 클로즈</strong>
             주황 X와 균열이 선명하게 보이게 촬영합니다. 추가 범위의 기본 형식입니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-08-hidden-crash.jpg" alt="은폐 크래시 구조 추가 범위" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-08-hidden-crash.jpg" alt="은폐 크래시 구조 추가 범위" />
           <figcaption>
             <strong>은폐 구조 추가 범위</strong>
             탈착 후에야 보이는 크래시·서포트 파손입니다. 탈착 클로즈(에이프론 촬영)와 목적이 다릅니다. 견적에 없으면 표시한 뒤 즉시 촬영해 주십시오.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-09-harness-close.jpg" alt="하네스 HV 배선 추가 범위" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-09-harness-close.jpg" alt="하네스 HV 배선 추가 범위" />
           <figcaption>
             <strong>하네스·HV 배선 추가 범위</strong>
             카울·프렁크 트레이 쪽 배선이 견적 밖이면 이 각도로 남깁니다. 탈착 갤러리의 배선 클로즈와 목적이 다릅니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/extra-10-inner-structure.jpg" alt="표시 추가 범위 예시" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/extra-10-inner-structure.jpg" alt="표시 추가 범위 예시" />
           <figcaption>
             <strong>표시 추가 범위 예시</strong>
             브라켓 파손·크래시 빔·구조 변형·카울 은폐 손상을 표시한 뒤 그 자리에서 클로즈로 남깁니다. 교육용 예시이며, 이 가이드의 전면 탈·장착 작업과 다른 차량입니다.
@@ -646,42 +606,42 @@
       <p>신품은 박스 단위로 펼쳐 촬영하고, 프라이머·도장 상태도 남깁니다. 작업 카드·노란색 테이프의 차량 번호는 교육용 공유본에서만 가립니다. 실제 작업 사진에는 차량을 식별할 수 있게 촬영합니다.</p>
       <div class="gallery">
         <figure>
-          <img src="photo-guide-assets/parts-01-new-fender.jpg" alt="신품 펜더" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/parts-01-new-fender.jpg" alt="신품 펜더" />
           <figcaption>
             <strong>신품 펜더</strong>
             부품 전체가 보이게 펼쳐 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/parts-02-primer-bumper.jpg" alt="프라이머 범퍼" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/parts-02-primer-bumper.jpg" alt="프라이머 범퍼" />
           <figcaption>
             <strong>프라이머 범퍼</strong>
             도장 전 준비 상태입니다. 스탠드에 올린 부품이 식별되게 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/parts-03-paint-booth-fender.jpg" alt="도장 부스 펜더 상도" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/parts-03-paint-booth-fender.jpg" alt="도장 부스 펜더 상도" />
           <figcaption>
             <strong>도장 부스 펜더</strong>
             상도 작업 중입니다. 부스와 부품이 함께 보이게 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/parts-04-painted-fender-scan.jpg" alt="논샌딩 필러 펜더" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/parts-04-painted-fender-scan.jpg" alt="논샌딩 필러 펜더" />
           <figcaption>
             <strong>도장 상태 기록</strong>
             논샌딩 필러 등 공정이 읽히게 촬영합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/parts-05-new-layout.jpg" alt="신품 레이아웃" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/parts-05-new-layout.jpg" alt="신품 레이아웃" />
           <figcaption>
             <strong>신품 레이아웃</strong>
             빔·크래시 구조·헤드램프·브라켓·체결류·프렁크 트레이를 한자리에 펼쳐 촬영합니다. 박스·랩핑 부품도 동일하게 펼칩니다. 교육용 예시이며, 이 가이드의 전면 탈·장착 작업과 다른 차량입니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/parts-06-paint-booth-2.jpg" alt="도장 부스 펜더 두 번째" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/parts-06-paint-booth-2.jpg" alt="도장 부스 펜더 두 번째" />
           <figcaption>
             <strong>도장 부스 보조 앵글</strong>
             같은 공정도 다른 각도 한 장을 더 남깁니다.
@@ -705,21 +665,21 @@
       <p>부품·패널 장착이 완료되었다는 증빙입니다. 아래는 이 작업의 실제 장착 완료 사진입니다. 정면, 3/4 정렬, 패널 갭을 남깁니다.</p>
       <div class="gallery">
         <figure>
-          <img src="photo-guide-assets/refit-01-front.jpg" alt="장착 완료 정면" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/refit-01-front.jpg" alt="장착 완료 정면" />
           <figcaption>
             <strong>장착 정면</strong>
             범퍼·램프·후드가 제자리에 장착되었음을 정면에서 확인합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/refit-02-front-34.jpg" alt="장착 완료 3분의 4" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/refit-02-front-34.jpg" alt="장착 완료 3분의 4" />
           <figcaption>
             <strong>3/4 정렬</strong>
             펜더·범퍼·램프 라인이 맞게 장착되었는지 확인합니다.
           </figcaption>
         </figure>
         <figure>
-          <img src="photo-guide-assets/refit-03-panel-gap.jpg" alt="패널 갭 클로즈" />
+          <img loading="lazy" decoding="async" src="photo-guide-assets/refit-03-panel-gap.jpg" alt="패널 갭 클로즈" />
           <figcaption>
             <strong>패널 갭 클로즈</strong>
             펜더–램프–범퍼 갭이 읽히게 촬영합니다. 출고 품질 확인용입니다.
